@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViewDemo.Views.PresentationPage"
+             Shell.NavBarIsVisible="false"
+             Title="PresentationPage">
+    <VerticalStackLayout Padding="5">
+        <Frame
+            Padding="5" 
+            BorderColor="DarkGray"
+            CornerRadius="10"
+            HasShadow="True">
+            <VerticalStackLayout>
+                <Label Margin="0,0,0,10" Text="Welcome to Plralsight"/>
+                <BoxView
+                    HeightRequest="4"
+                    Color="LightGray"
+                    HorizontalOptions="Fill"/>
+                <Ellipse
+                    Margin="0,14,0,10"
+                    HeightRequest="150"
+                    HorizontalOptions="Center"
+                    Stroke="Red"
+                    StrokeThickness="4"
+                    WidthRequest="150">
+                    <Ellipse.Background>
+                        <RadialGradientBrush>
+                            <GradientStop Color="Red" Offset="0.0"/>
+                            <GradientStop Color="LightPink" Offset="1.0"/>
+                        </RadialGradientBrush>
+                    </Ellipse.Background>
+                </Ellipse>
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
