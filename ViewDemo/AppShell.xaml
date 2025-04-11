@@ -11,6 +11,9 @@
     <TabBar>
         <ShellContent Title="Presentation" ContentTemplate="{DataTemplate  views:PresentationPage}"/>
         <ShellContent Title="Commands" ContentTemplate="{DataTemplate  views:CommandPage}"/>
+        <ShellContent Title="Settings" ContentTemplate="{DataTemplate  views:SettingPage}"/>
+        <ShellContent Title="Editing" ContentTemplate="{DataTemplate  views:EditingPage}"/>
+        <ShellContent Title="Activity" ContentTemplate="{DataTemplate views:ActivityPage}"/>
     </TabBar>
 
 </Shell>

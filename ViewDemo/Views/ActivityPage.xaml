@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViewDemo.Views.ActivityPage"
+             Title="ActivityPage"
+             Shell.NavBarIsVisible="false">
+
+    <VerticalStackLayout Margin="10" Spacing="10">
+        <Button Clicked="Button_Clicked" Text="Activity On/Off"/>
+        <ActivityIndicator x:Name="activitiyIndicator"/>
+
+        <Button Clicked="Button_Clicked_1" Text="Update Progress"/>
+        <Button Clicked="Button_Clicked_2" Text="Animated Update Progress"/>
+        <ProgressBar x:Name="progressBar" Progress="0.01"/>
+
+    </VerticalStackLayout>
+</ContentPage>
